@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-dotenv.config();   // ✅ یہ لائن سب سے اوپر ہونی چاہیے
+dotenv.config();
 
 import orderModel from "../models/orderModels.js";
 import userModel from "../models/userModel.js";
@@ -26,7 +26,7 @@ const placeOrder = async (req, res) => {
       return res.json({ success: true });
     }
 
-    const frontend_url = process.env.FRONTEND_URL || "http://localhost:5173";
+    const frontend_url = process.env.FRONTEND_URL || "https://food-del-2-frontend1.onrender.com";
 
     const line_items = items.map((item) => ({
       price_data: {
