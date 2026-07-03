@@ -26,7 +26,7 @@ const placeOrder = async (req, res) => {
       return res.json({ success: true });
     }
 
-    const frontend_url = process.env.FRONTEND_URL || "https://food-del-2-frontend1.onrender.com";
+    const frontend_url = process.env.FRONTEND_URL || "https://food-del-2-frontend-zeeshan.onrender.com";
 
     const line_items = items.map((item) => ({
       price_data: {
