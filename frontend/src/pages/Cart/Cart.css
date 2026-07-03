@@ -1,0 +1,152 @@
+.cart-items-title {
+  display: grid;
+  grid-template-columns: 0.8fr 1.5fr 1fr 1fr 1fr 0.8fr;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  font-weight: 600;
+  color: #555;
+}
+
+.cart-items-item {
+  font-weight: 400;
+  color: #333;
+}
+
+.cart-items-item img {
+  width: 60px;
+  border-radius: 8px;
+}
+
+.remove-icon {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.remove-icon:hover {
+  color: darkred;
+}
+
+.cart-empty {
+  text-align: center;
+  padding: 30px;
+  font-size: 18px;
+  color: #888;
+}
+
+/* Cart Total Section */
+.cart-total {
+  margin-top: 40px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  max-width: 400px;
+}
+
+.cart-total h2 {
+  margin-bottom: 15px;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.cart-total button {
+  width: 100%;
+  padding: 14px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.2s;
+}
+
+.cart-total button:hover {
+  background: #e55a5a;
+}
+
+
+
+/* Promo Code Section */
+.promo-section {
+  margin-top: 20px;
+}
+
+.promo-input {
+  display: flex;
+  gap: 10px;
+}
+
+.promo-input input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.promo-input input:focus {
+  border-color: #ff6b6b;
+}
+
+.promo-input button {
+  padding: 10px 24px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.promo-input button:hover:not(:disabled) {
+  background: #e55a5a;
+}
+
+.promo-input button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.promo-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.promo-success {
+  color: green;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.promo-remove {
+  color: #ff6b6b;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+.promo-remove:hover {
+  color: #e55a5a;
+}
+
+.promo-hint {
+  color: #888;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.cart-total-details.discount {
+  color: green;
+}

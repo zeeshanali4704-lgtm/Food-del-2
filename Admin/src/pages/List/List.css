@@ -1,0 +1,160 @@
+/* List.css - Admin Food List Styles */
+
+.list {
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.list p {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+/* ------- Table Header & Rows ------- */
+.list-table {
+  width: 100%;
+  overflow-x: auto; /* For mobile responsiveness */
+}
+
+.list-table-format {
+  display: grid;
+  grid-template-columns: 0.8fr 1.5fr 1.2fr 1fr 0.6fr;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 10px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 15px;
+  color: #333;
+  transition: background 0.2s ease;
+}
+
+/* Header styling */
+.list-table-format.title {
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #e0e0e0;
+  font-weight: 600;
+  color: #222;
+  padding: 16px 10px;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Data rows hover effect */
+.list-table-format:not(.title):hover {
+  background-color: #fafafa;
+}
+
+/* ------ Images ------ */
+.list-table-format img {
+  width: 55px;
+  height: 55px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #eee;
+  background: #f8f8f8;
+}
+
+/* ------ Text truncation for long names ------ */
+.list-table-format p {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ------ Delete / Action Button ------ */
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #999;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.delete-btn:hover {
+  background: #fee2e2;
+  color: #dc2626;
+  transform: scale(1.1);
+}
+
+.delete-btn:active {
+  transform: scale(0.9);
+}
+
+/* ------ Loading & Empty States ------ */
+.list p.loading,
+.list p.empty {
+  text-align: center;
+  font-weight: 400;
+  color: #888;
+  padding: 40px 0;
+  font-size: 16px;
+}
+
+/* ------ Responsive (Mobile/Tablet) ------ */
+@media (max-width: 768px) {
+  .list {
+    padding: 16px;
+  }
+
+  .list p {
+    font-size: 18px;
+  }
+
+  .list-table-format {
+    grid-template-columns: 1fr 1.5fr 1fr 0.8fr 0.6fr;
+    gap: 8px;
+    font-size: 13px;
+    padding: 12px 6px;
+  }
+
+  .list-table-format img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .delete-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .list-table-format {
+    grid-template-columns: 0.6fr 1.2fr 0.8fr 0.6fr 0.5fr;
+    font-size: 12px;
+    gap: 5px;
+    padding: 10px 4px;
+  }
+
+  .list-table-format img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .list-table-format.title {
+    font-size: 11px;
+    padding: 10px 4px;
+  }
+
+  .delete-btn {
+    width: 24px;
+    height: 24px;
+    font-size: 13px;
+  }
+}
