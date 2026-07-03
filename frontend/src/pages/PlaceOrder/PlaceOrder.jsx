@@ -1,8 +1,8 @@
-import React, { useContext, useEffect, useState } from 'react';
-import './PlaceOrder.css';
-import { StoreContext } from '../../components/context/shopContext';
-import { useNavigateRemove-Item -Recurse -Force .git } from 'react-router-dom';
-import axios from 'axios';
+import React, { useContext, useEffect, useState } from "react";
+import "./PlaceOrder.css";
+import { StoreContext } from "../../components/context/shopContext";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 function PlaceOrder() {
   const navigate = useNavigate();
